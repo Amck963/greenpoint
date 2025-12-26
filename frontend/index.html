@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenPoint</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">GreenPoint</div>
+    <input id="search" placeholder="Search parks, memorials..." />
+    <button id="btnLoad">Load Sites</button>
+  </header>
+
+  <main class="layout">
+    <aside class="panel">
+      <h2>Filters</h2>
+      <label><input type="checkbox" id="f_parks" checked /> Parks</label><br/>
+      <label><input type="checkbox" id="f_memorials" checked /> Memorials</label><br/>
+      <hr/>
+      <button id="btnCreateDummy">Create Dummy Site</button>
+      <p class="hint">For now this will call our API later.</p>
+    </aside>
+
+    <section class="content">
+      <h2>Sites</h2>
+      <div id="sites" class="cards"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
